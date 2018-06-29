@@ -20,7 +20,7 @@ function content_types_node_info() {
     'events' => array(
       'name' => t('Events'),
       'base' => 'node_content',
-      'description' => t('This content type is to create Events in the website.'),
+      'description' => t('This content type is to create Events in the WEB APPLICATION.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',

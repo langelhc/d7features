@@ -237,6 +237,56 @@ function content_types_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-events-field_banner'.
+  $field_instances['node-events-field_banner'] = array(
+    'bundle' => 'events',
+    'deleted' => 0,
+    'description' => 'Here you can add a banner.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_banner',
+    'label' => 'Banner',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => 'banners',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => -2,
+    ),
+  );
+
   // Exported field_instance: 'node-events-field_pdf'.
   $field_instances['node-events-field_pdf'] = array(
     'bundle' => 'events',
@@ -281,9 +331,11 @@ function content_types_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Banner');
   t('Body');
   t('Date');
   t('Enter a comma-separated list of words to describe your content.');
+  t('Here you can add a banner.');
   t('Image');
   t('PDF');
   t('Tags');
